@@ -1,0 +1,122 @@
+[
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 1,
+            "user": 1,
+            "note": "I prefer bourbon"
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 1,
+            "user": 1,
+            "note": "Make sure to do a large orange twist"
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 11,
+            "user": 1,
+            "note": "These are dangerous..."
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 11,
+            "user": 1,
+            "note": "Great to start a meal with."
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 15,
+            "user": 1,
+            "note": "Such a great aperitif."
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 42,
+            "user": 1,
+            "note": "This is like candy"
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 42,
+            "user": 1,
+            "note": "Way better then corpse reviver #1"
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 60,
+            "user": 1,
+            "note": "Not a fan of salt on the rim"
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 60,
+            "user": 1,
+            "note": "I prefer over ice then up."
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 88,
+            "user": 1,
+            "note": "The perfect warm weather drink!"
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 88,
+            "user": 1,
+            "note": "Just a splash more seltzer is good."
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 66,
+            "user": 1,
+            "note": "The eggwhite makes this so goooooood!!!"
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 34,
+            "user": 1,
+            "note": "Sucker for anything with New York in the name."
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 12,
+            "user": 1,
+            "note": "Perfectly balanced, amazing!"
+        }
+    },
+    {
+        "model":"cocktail.CocktailNote",
+        "fields": {
+            "cocktail": 9,
+            "user": 1,
+            "note": "Goood if I want something low abv"
+        }
+    }
+]

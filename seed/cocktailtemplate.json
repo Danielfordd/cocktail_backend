@@ -1,0 +1,55 @@
+[
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"",
+            "cocktail_description": "",
+            "cocktail_image": ""
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 99,
+            "served":
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 99,
+            "glass":
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 99,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": "1 Part"
+        }
+    },
+    {
+        "model":"cocktail.Garnish",
+        "fields": {
+            "cocktail": 99,
+            "garnish":
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 99,
+            "order": 0,
+            "instruction": "Combine ingredients with ice and stir until chilled, approximately 20-30 seconds."
+        }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 99,
+            "tag": 1
+        }
+     },
+]
