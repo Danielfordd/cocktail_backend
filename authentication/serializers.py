@@ -7,13 +7,13 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('username', 'email', 'first_name', 'last_name')
+        fields = ('email', 'first_name', 'last_name')
 
 
 class UserSerializerWithToken(serializers.ModelSerializer):
 
-    token = serializers.SerializerMethodField()
-    password = serializers.CharField(write_only=True)
+    # token = serializers.SerializerMethodField()
+    api_key = serializers.CharField(write_only=True)
 
     def get_token(self, obj):
         jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
@@ -24,13 +24,13 @@ class UserSerializerWithToken(serializers.ModelSerializer):
         return token
 
     def create(self, validated_data):
-        password = validated_data.pop('password', None)
+        api_key = validated_data.pop('api_key', None)
         instance = self.Meta.model(**validated_data)
-        if password is not None:
-            instance.set_password(password)
+        if api_key is not None:
+            instance.set_password(api_key)
         instance.save()
         return instance
 
     class Meta:
         model = User
-        fields = ('token', 'username', 'password', 'email', 'first_name', 'last_name')
+        fields = ('api_key', 'email', 'first_name', 'last_name')

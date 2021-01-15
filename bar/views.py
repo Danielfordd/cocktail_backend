@@ -103,6 +103,6 @@ def create_ingredient(request):
     user = User.objects.get(pk=userId)
     ingredientMatch = Ingredient.objects.filter(ingredient_name=ingredient)[0]
 
-    new_mybar_ing = Bar(user=user, ingredient=ingredientMatch)
-    new_mybar_ing.save()
+    new_mybar_ingredient = Bar(user=user, ingredient=ingredientMatch)
+    new_mybar_ingredient.save()
     return JsonResponse({'addedIngredient': ingredient})
