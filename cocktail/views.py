@@ -6,6 +6,14 @@ from django.db.models import Count
 from django.db import connection
 from cocktail.utilities import calculate_cocktails
 
+# Public Routes
+def load_tags(request):
+    """
+    Returns all available tags.
+    """
+    tags = [tag.tag for tag in CocktailTag.objects.all()]
+    return JsonResponse({'tags': tags})
+
 
 def cocktail_search(request, query):
     """
@@ -127,11 +135,3 @@ def cocktail__sort(request, ingredients):
     return JsonResponse({'exact': exactIngredients,
                          'one_off': oneIngredientAway,
                          'two_off': twoIngredientsAway})
-
-
-def load_tags(request):
-    """
-    Query all tag names and returns them.
-    """
-    tags = [tag.tag for tag in CocktailTag.objects.all()]
-    return JsonResponse({'tags': tags})
