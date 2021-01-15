@@ -104,8 +104,8 @@ WSGI_APPLICATION = 'api.wsgi.application'
 DATABASECONFIG = {
     'development': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ctd_db',
-        'USER': 'consider_the_drink',
+        'NAME': 'cocktail_backend_db',
+        'USER': 'cocktail_backend_user',
         'PASSWORD': os.environ.get('DATABASE_PW'),
         'HOST': '127.0.0.1',
         'PORT': '5432',
