@@ -1,20 +1,13 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from .models import Cocktail, CocktailTagJoin, CocktailTag
+from .models import Cocktail, CocktailTagJoin
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.db.models import Count
 from django.db import connection
 from cocktail.utilities import calculate_cocktails
 
+
 # Public Routes
-def load_tags(request):
-    """
-    Returns all available tags.
-    """
-    tags = [tag.tag for tag in CocktailTag.objects.all()]
-    return JsonResponse({'tags': tags})
-
-
 def cocktail_search(request, query):
     """
     Searchs cocktails using a case insensitive contains search using

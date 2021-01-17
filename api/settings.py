@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'ingredient.apps.IngredientConfig',
     'bar.apps.BarConfig',
     'cocktail.apps.CocktailConfig',
+    'tags.apps.TagsConfig'
     'debug_toolbar',
 ]
 

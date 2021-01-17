@@ -27,3 +27,5 @@ document endpoints
 build frontend to explain documentations with sandbox for users to understand whats going on
 secure certain routes (everything in bar)
 implement api keys
+
+update seed data to remove unused or overly specific ingredients
